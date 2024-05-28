@@ -1,0 +1,26 @@
+
+swagger: "2.0"
+info:
+  description: "This is a simple API to greet the user."
+  version: "1.0.0"
+  title: "Greeting API"
+host: "localhost:5000"
+basePath: "/"
+schemes:
+- "http"
+paths:
+  /api/v1/hello:
+    get:
+      summary: "Greet the user"
+      description: "Returns a greeting message to the user."
+      tags:
+      - "Greetings"
+      responses:
+        200:
+          description: "A greeting to the user"
+          schema:
+            type: "object"
+            properties:
+              message:
+                type: "string"
+                example: "Hello, world!"
